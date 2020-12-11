@@ -37,14 +37,24 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
     func sceneWillEnterForeground(_ scene: UIScene) {
-        // Called as the scene transitions from the background to the foreground.
-        // Use this method to undo the changes made on entering the background.
+        guard let vc = (scene.delegate as? SceneDelegate)?.window?.rootViewController as? ViewController else {
+            return
+        }
+        if let playerLayer = vc.playerLayer, let player = vc.player {
+            // 进入前台重新连接player
+            playerLayer.player = player
+        }
     }
 
     func sceneDidEnterBackground(_ scene: UIScene) {
-        // Called as the scene transitions from the foreground to the background.
-        // Use this method to save data, release shared resources, and store enough scene-specific state information
-        // to restore the scene back to its current state.
+        guard let vc = (scene.delegate as? SceneDelegate)?.window?.rootViewController as? ViewController else {
+            return
+        }
+
+        if let playerLayer = vc.playerLayer {
+            // 进入后台断开与player的连接
+            playerLayer.player = nil
+        }
     }
 
 

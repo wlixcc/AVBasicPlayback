@@ -16,6 +16,7 @@
 		77E91C2C25809A7000612041 /* AVBasicPlaybackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E91C2B25809A7000612041 /* AVBasicPlaybackTests.swift */; };
 		77E91C3725809A7000612041 /* AVBasicPlaybackUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E91C3625809A7000612041 /* AVBasicPlaybackUITests.swift */; };
 		77E91C482580B66A00612041 /* sample-mp4-file.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 77E91C472580B66A00612041 /* sample-mp4-file.mp4 */; };
+		77F9F71B258364F700285BB6 /* HLSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F9F71A258364F700285BB6 /* HLSViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		77E91C3625809A7000612041 /* AVBasicPlaybackUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVBasicPlaybackUITests.swift; sourceTree = "<group>"; };
 		77E91C3825809A7000612041 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77E91C472580B66A00612041 /* sample-mp4-file.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sample-mp4-file.mp4"; sourceTree = "<group>"; };
+		77F9F71A258364F700285BB6 /* HLSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HLSViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				77E91C1D25809A6F00612041 /* Assets.xcassets */,
 				77E91C1F25809A6F00612041 /* LaunchScreen.storyboard */,
 				77E91C2225809A6F00612041 /* Info.plist */,
+				77F9F71A258364F700285BB6 /* HLSViewController.swift */,
 			);
 			path = AVBasicPlayback;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77F9F71B258364F700285BB6 /* HLSViewController.swift in Sources */,
 				77E91C1925809A6D00612041 /* ViewController.swift in Sources */,
 				77E91C1525809A6D00612041 /* AppDelegate.swift in Sources */,
 				77E91C1725809A6D00612041 /* SceneDelegate.swift in Sources */,
